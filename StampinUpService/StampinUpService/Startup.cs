@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using StampinUp.Service.Services;
 
 namespace StampinUp.Service
 {
@@ -26,6 +27,8 @@ namespace StampinUp.Service
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddSingleton<IGoRESTApiService, GoRESTApiService>();
+            services.AddHttpClient("GoRESTApi", c => c.BaseAddress = new Uri("https://gorest.co.in/"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -3,17 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using StampinUp.Service.Models;
+using StampinUp.Service.Services;
 
 namespace StampinUp.Service.Controllers
 {
     [ApiController]
     [Route("[controller]")]
     public class UsersController : ControllerBase
-    {        
+    {
+        private readonly IGoRESTApiService _goRESTApiService;
+
         private readonly List<User> _users = new List<User>();
 
-        public UsersController()
+        public UsersController(IGoRESTApiService goRESTApiService)
         {
+
+            _goRESTApiService = goRESTApiService;
+
             _users.Add(new User(
                 Guid.NewGuid(),
                 "supergrover@sesamestreet.com",
@@ -24,7 +30,8 @@ namespace StampinUp.Service.Controllers
                 {
                     new UserPlatform(1,"VR Platform",new DateTime(2022, 1, 1, 0, 0, 0)),
                     new UserPlatform(2,"PS5 Platform",new DateTime(2020, 11, 12, 0, 0, 0))
-                })
+                },
+                _goRESTApiService)
             );
 
             _users.Add(new User(
@@ -33,7 +40,8 @@ namespace StampinUp.Service.Controllers
                 "Oscar The Grouch",
                 "Garbagecanbul",
                 "Scram! Get Lost!",
-                new List<UserPlatform>())
+                new List<UserPlatform>(),
+                _goRESTApiService)
             );
 
             _users.Add(new User(
@@ -45,7 +53,8 @@ namespace StampinUp.Service.Controllers
                 new List<UserPlatform>()
                 {
                     new UserPlatform(1,"Xbox Series S Platform",new DateTime(2020, 11, 10, 0, 0, 0))
-                })
+                },
+                _goRESTApiService)
             );
         }
 
