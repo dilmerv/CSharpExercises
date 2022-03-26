@@ -47,6 +47,12 @@ namespace StampinUp.Service.Controllers
                     new UserPlatform(1,"Xbox Series S Platform",new DateTime(2020, 11, 10, 0, 0, 0))
                 })
             );
-        }        
+        }
+
+        [HttpGet]
+        public ActionResult<List<User>> Get()
+        {
+            return _users;
+        }
     }
 }
