@@ -83,5 +83,19 @@ namespace StampinUp.Service.Controllers
             oldUser = user;
             return _users.FirstOrDefault(u => u.Id == id);
         }
+
+        [HttpPatch]
+        public ActionResult<User> Update(Guid id, [FromBody] User user)
+        {
+            User oldUser = _users.FirstOrDefault(u => u.Id == id);
+            if (oldUser == null) return NotFound();
+            /* A true PATCH call is outside the scope of this practice API, but if
+               we were to do it, then we would parse the JSON object
+               to know which properties need to be updated; (via JToken or thirdparty
+               JSON patch modeler, etc.)                             
+             */
+            oldUser.Name = user.Name; //Just for an example of a PATCH endpoint we'll assume the request contained just the Name property (See comment above)
+            return _users.FirstOrDefault(u => u.Id == id);
+        }
     }
 }
