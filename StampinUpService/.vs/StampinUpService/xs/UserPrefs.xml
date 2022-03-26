@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{5335B765-A4B8-417E-87BF-9353724E09B8}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="StampinUpService/Controllers/UserController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="StampinUpService/Models/User (copy).cs">
     <Files>
       <File FileName="StampinUpService/Models/User.cs" Line="7" Column="9" />
       <File FileName="StampinUpService/Controllers/UserController.cs" Line="17" Column="1" />
@@ -8,14 +8,17 @@
       <File FileName="StampinUpService/Properties/launchSettings.json" Line="11" Column="16" />
       <File FileName="StampinUpService/Program.cs" Line="1" Column="1" />
       <File FileName="StampinUpService/Startup.cs" Line="1" Column="1" />
+      <File FileName="StampinUpService/Models/User (copy).cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="StampinUpService" expanded="True">
-            <Node name="StampinUpService" expanded="True" selected="True">
+            <Node name="StampinUpService" expanded="True">
               <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="User (copy).cs" selected="True" />
+              </Node>
               <Node name="Properties" expanded="True" />
               <Node name="appsettings.json" expanded="True" />
             </Node>
