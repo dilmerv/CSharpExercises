@@ -54,5 +54,17 @@ namespace StampinUp.Service.Controllers
         {
             return _users;
         }
+
+        [HttpGet("{id:Guid}")]
+        public ActionResult<User> GetById(Guid id)
+        {
+            return Ok(_users.FirstOrDefault(u => u.Id == id));
+        }
+
+        [HttpGet("{email}")]
+        public ActionResult<User> GetByEmail(string email)
+        {
+            return Ok(_users.FirstOrDefault(u => u.Email == email));
+        }
     }
 }
