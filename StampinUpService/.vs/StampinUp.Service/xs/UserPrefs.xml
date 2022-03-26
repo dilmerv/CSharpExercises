@@ -1,21 +1,25 @@
-﻿<Properties StartupConfiguration="{5335B765-A4B8-417E-87BF-9353724E09B8}|StampinUpService">
-  <MonoDevelop.Ide.Workbench ActiveDocument="StampinUpService/Startup.cs">
+﻿<Properties StartupConfiguration="{5335B765-A4B8-417E-87BF-9353724E09B8}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="StampinUpService/Models/GoRESTApiUserInfo.cs">
     <Files>
       <File FileName="StampinUpService/Models/User.cs" Line="7" Column="22" />
-      <File FileName="StampinUpService/Controllers/UserController.cs" Line="9" Column="2" />
+      <File FileName="StampinUpService/Controllers/UserController.cs" Line="99" Column="10" />
       <File FileName="StampinUpService/appsettings.Development.json" Line="1" Column="1" />
       <File FileName="StampinUpService/appsettings.json" Line="1" Column="1" />
       <File FileName="StampinUpService/Properties/launchSettings.json" Line="11" Column="16" />
-      <File FileName="StampinUpService/Models/User (copy).cs" Line="5" Column="2" />
+      <File FileName="StampinUpService/Models/User (copy).cs" Line="23" Column="1" />
       <File FileName="StampinUpService/Program.cs" Line="11" Column="2" />
-      <File FileName="StampinUpService/Startup.cs" Line="15" Column="2" />
+      <File FileName="StampinUpService/Startup.cs" Line="16" Column="25" />
+      <File FileName="StampinUpService/Models/GoRESTApiUserInfo.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="StampinUp.Service" expanded="True" selected="True">
+          <Node name="StampinUp.Service" expanded="True">
             <Node name="StampinUp.Service" expanded="True">
-              <Node name="Models" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="GoRESTApiUserInfo.cs" selected="True" />
+              </Node>
               <Node name="Properties" expanded="True" />
               <Node name="appsettings.json" expanded="True" />
             </Node>
@@ -29,6 +33,6 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.StampinUp.Service FirstBuild="True" PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.ItemProperties.StampinUp.Service PreferredExecutionTarget="/Applications/Safari.app" />
   <MultiItemStartupConfigurations />
 </Properties>
