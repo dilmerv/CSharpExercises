@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/nolan/Documents/GitHub/CSharpExercises/StampinUpService/StampinUpService/StampinUpService.csproj",
-      "projectName": "StampinUpService",
-      "projectPath": "/Users/nolan/Documents/GitHub/CSharpExercises/StampinUpService/StampinUpService/StampinUpService.csproj",
+      "projectUniqueName": "/Users/nolan/Documents/GitHub/CSharpExercises/StampinUpService/StampinUpService/StampinUp.Service.csproj",
+      "projectName": "StampinUp.Service",
+      "projectPath": "/Users/nolan/Documents/GitHub/CSharpExercises/StampinUpService/StampinUpService/StampinUp.Service.csproj",
       "packagesPath": "/Users/nolan/.nuget/packages/",
       "outputPath": "/Users/nolan/Documents/GitHub/CSharpExercises/StampinUpService/StampinUpService/obj/",
       "projectStyle": "PackageReference",

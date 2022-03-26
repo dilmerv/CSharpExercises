@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "StampinUpService": {
+    "StampinUp.Service": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "users",

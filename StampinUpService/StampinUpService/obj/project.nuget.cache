@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vU2M6Dya4QAD1A6we90v8msfbK7pBOq7XH6i++kolJQ9N7UU3TkYjWoWPsBgKXCmcSQkH225Gq5KCxo5bZUpYA==",
+  "dgSpecHash": "nH/7wB+JOhtQViSE0D77VLsdqCNQKDvHFu8npkpRhOK3G9HGa9rnmxSvKIVSUT3YR6nW06g6pkcUXkt7v1UX+A==",
   "success": true,
-  "projectFilePath": "/Users/nolan/Documents/GitHub/CSharpExercises/StampinUpService/StampinUpService/StampinUpService.csproj",
+  "projectFilePath": "/Users/nolan/Documents/GitHub/CSharpExercises/StampinUpService/StampinUpService/StampinUp.Service.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

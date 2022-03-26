@@ -1,4 +1,4 @@
-﻿<Properties StartupConfiguration="{5335B765-A4B8-417E-87BF-9353724E09B8}|Default">
+﻿<Properties StartupConfiguration="{5335B765-A4B8-417E-87BF-9353724E09B8}|StampinUpService">
   <MonoDevelop.Ide.Workbench ActiveDocument="StampinUpService/Startup.cs">
     <Files>
       <File FileName="StampinUpService/Models/User.cs" Line="7" Column="22" />
@@ -13,13 +13,11 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="StampinUpService" expanded="True">
-            <Node name="StampinUpService" expanded="True">
-              <Node name="Controllers" expanded="True" />
+          <Node name="StampinUp.Service" expanded="True" selected="True">
+            <Node name="StampinUp.Service" expanded="True">
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="appsettings.json" expanded="True" />
-              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>
