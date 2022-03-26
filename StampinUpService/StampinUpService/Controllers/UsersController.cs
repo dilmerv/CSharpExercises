@@ -56,6 +56,20 @@ namespace StampinUp.Service.Controllers
                 },
                 _goRESTApiService)
             );
+
+            _users.Add(new User(
+                Guid.NewGuid(),
+                "varma_manik@feil-macgyver.name",
+                "Go Rest API User",
+                "United States",
+                "Go Get Me Some 3rd Party restful data",
+                new List<UserPlatform>()
+                {
+                    new UserPlatform(1,"VR Platform",new DateTime(2022, 1, 1, 0, 0, 0)),
+                    new UserPlatform(2,"PS5 Platform",new DateTime(2020, 11, 12, 0, 0, 0))
+                },
+                _goRESTApiService)
+            );
         }
 
         [HttpGet]
