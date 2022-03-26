@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using StampinUp.Service.Models;
 using StampinUp.Service.Services;
@@ -13,63 +14,120 @@ namespace StampinUp.Service.Controllers
     {
         private readonly IGoRESTApiService _goRESTApiService;
 
-        private readonly List<User> _users = new List<User>();
+        private List<User> _users = new List<User>();
 
         public UsersController(IGoRESTApiService goRESTApiService)
         {
+            /* gorest.co.in --
+               This API service doesn't have an endpoint to get by email, only has one for id.
+               Because the User.Id of our endpoint is a guid (and in real world instances,
+                we most likely wouldn't have the id of this thirdparty service, so we're choosing
+                to use the email as the key. So, we get all users and then take the firstordefault
+                that has that email. This isn't the ideal, but we're just practicing/playing so...
+            */
 
+            //Consume the third party API and use the gender and status from that for our users
             _goRESTApiService = goRESTApiService;
+            List<GoRESTApiUserInfo> goRESTUsers = GoRESTUsers().Result;
 
-            _users.Add(new User(
-                Guid.NewGuid(),
-                "supergrover@sesamestreet.com",
-                "Super Grover",
-                "Crashland",
-                "Up Up and Away!",
-                new List<UserPlatform>()
+            User myUser = new User()
+            {
+                Id = Guid.NewGuid(),
+                Email = "supergrover@sesamestreet.com",
+                Name = "Super Grover",
+                Country = "Crashland",
+                CatchPhrase = "Up Up and Away!",
+                UserPlatforms = new List<UserPlatform>()
+                        {
+                            new UserPlatform()
+                            {
+                                DeviceId = 1,
+                                DeviceName = "VR Platform",
+                                DevicePurchaseDate = new DateTime(2022, 1, 1, 0, 0, 0)
+                            },
+                            new UserPlatform()
+                            {
+                                DeviceId = 2,
+                                DeviceName = "PS5 Platform",
+                                DevicePurchaseDate = new DateTime(2020, 11, 12, 0, 0, 0)
+                            }
+                        }
+            };
+            AddGoRESTUserInfo(goRESTUsers, myUser);
+            _users.Add(myUser);
+
+            myUser = new User()
+            {
+                Id = Guid.NewGuid(),
+                Email = "oscarthegrouch@sesamestreet.com",
+                Name = "Oscar The Grouch",
+                Country = "Garbagecanbul",
+                CatchPhrase = "Scram! Get Lost!",
+                UserPlatforms = new List<UserPlatform>()
+            };
+            AddGoRESTUserInfo(goRESTUsers, myUser);
+            _users.Add(myUser);
+
+            myUser = new User()
+            {
+                Id = new Guid("0ba44840-524e-4013-beb0-6340461dcba3"), //Hard code guid for testing GetById,Put,Patch
+                Email = "cookiemonster@sesamestreet.com",
+                Name = "Cookie Monster",
+                Country = "Isle of Cookie",
+                CatchPhrase = "num num num num",
+                UserPlatforms = new List<UserPlatform>()
                 {
-                    new UserPlatform(1,"VR Platform",new DateTime(2022, 1, 1, 0, 0, 0)),
-                    new UserPlatform(2,"PS5 Platform",new DateTime(2020, 11, 12, 0, 0, 0))
-                },
-                _goRESTApiService)
-            );
+                    new UserPlatform()
+                    {
+                        DeviceId = 1,
+                        DeviceName = "Xbox Series S Platform",
+                        DevicePurchaseDate = new DateTime(2020, 11, 10, 0, 0, 0)
+                    }
+                }
+            };
+            AddGoRESTUserInfo(goRESTUsers, myUser);
+            _users.Add(myUser);
 
-            _users.Add(new User(
-                Guid.NewGuid(),
-                "oscarthegrouch@sesamestreet.com",
-                "Oscar The Grouch",
-                "Garbagecanbul",
-                "Scram! Get Lost!",
-                new List<UserPlatform>(),
-                _goRESTApiService)
-            );
-
-            _users.Add(new User(
-                new Guid("0ba44840-524e-4013-beb0-6340461dcba3"), //Hard code guid for testing GetById,Put,Patch
-                "cookiemonster@sesamestreet.com",
-                "Cookie Monster",
-                "Isle of Cookie",
-                "num num num num",
-                new List<UserPlatform>()
+            myUser = new User()
+            {
+                Id = Guid.NewGuid(),
+                Email = "varma_manik@feil-macgyver.name",
+                Name = "Go Rest API User",
+                Country = "United States",
+                CatchPhrase = "Go Get Me Some 3rd Party restful data",
+                UserPlatforms = new List<UserPlatform>()
                 {
-                    new UserPlatform(1,"Xbox Series S Platform",new DateTime(2020, 11, 10, 0, 0, 0))
-                },
-                _goRESTApiService)
-            );
+                    new UserPlatform()
+                    {
+                        DeviceId = 1,
+                        DeviceName = "VR Platform",
+                        DevicePurchaseDate =  new DateTime(2022, 1, 1, 0, 0, 0)
+                    },
+                    new UserPlatform()
+                    {
+                        DeviceId = 2,
+                        DeviceName = "PS5 Platform",
+                        DevicePurchaseDate = new DateTime(2020, 11, 12, 0, 0, 0)
+                    }
+                }
+            };
+            AddGoRESTUserInfo(goRESTUsers, myUser);
+            _users.Add(myUser);
+        }
 
-            _users.Add(new User(
-                Guid.NewGuid(),
-                "varma_manik@feil-macgyver.name",
-                "Go Rest API User",
-                "United States",
-                "Go Get Me Some 3rd Party restful data",
-                new List<UserPlatform>()
-                {
-                    new UserPlatform(1,"VR Platform",new DateTime(2022, 1, 1, 0, 0, 0)),
-                    new UserPlatform(2,"PS5 Platform",new DateTime(2020, 11, 12, 0, 0, 0))
-                },
-                _goRESTApiService)
-            );
+        private static void AddGoRESTUserInfo(List<GoRESTApiUserInfo> goRESTUsers, User myUser)
+        {
+            GoRESTApiUserInfo goRESTApiUserInfo = goRESTUsers.FirstOrDefault(u => u.email == myUser.Email);
+            if (goRESTApiUserInfo != null)
+            {
+                myUser.GoRESTGender = goRESTApiUserInfo.gender;
+                myUser.GoRESTStatus = goRESTApiUserInfo.status;
+            }
+        }
+
+        private async Task<List<GoRESTApiUserInfo>> GoRESTUsers()
+        {
+            return await _goRESTApiService.GetUsers();
         }
 
         [HttpGet]
@@ -98,7 +156,7 @@ namespace StampinUp.Service.Controllers
             return user;
         }
 
-        [HttpPut]
+        [HttpPut("{id:Guid}")]
         public ActionResult<User> Replace(Guid id, [FromBody] User user)
         {
             User oldUser = _users.FirstOrDefault(u => u.Id == id);
@@ -107,7 +165,7 @@ namespace StampinUp.Service.Controllers
             return _users.FirstOrDefault(u => u.Id == id);
         }
 
-        [HttpPatch]
+        [HttpPatch("{id:Guid}")]
         public ActionResult<User> Update(Guid id, [FromBody] User user)
         {
             User oldUser = _users.FirstOrDefault(u => u.Id == id);

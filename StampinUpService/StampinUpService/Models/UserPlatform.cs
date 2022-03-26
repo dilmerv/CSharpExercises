@@ -11,12 +11,5 @@ namespace StampinUp.Service.Models
         public string DeviceName { get; set; }
 
         public DateTime DevicePurchaseDate { get; set; }
-
-        public UserPlatform(int deviceid, string devicename, DateTime devicepurchasedate)
-        {
-            DeviceId = deviceid;
-            DeviceName = devicename;
-            DevicePurchaseDate = devicepurchasedate;
-        }
     }
 }

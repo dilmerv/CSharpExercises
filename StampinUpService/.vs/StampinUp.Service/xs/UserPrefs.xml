@@ -1,26 +1,27 @@
 ﻿<Properties StartupConfiguration="{5335B765-A4B8-417E-87BF-9353724E09B8}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="StampinUpService/Services/GoRESTAPIService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="StampinUpService/Models/UserPlatform.cs">
     <Files>
-      <File FileName="StampinUpService/Models/User.cs" Line="5" Column="30" />
-      <File FileName="StampinUpService/Controllers/UserController.cs" Line="99" Column="10" />
-      <File FileName="StampinUpService/appsettings.Development.json" Line="1" Column="1" />
-      <File FileName="StampinUpService/appsettings.json" Line="1" Column="1" />
-      <File FileName="StampinUpService/Properties/launchSettings.json" Line="11" Column="16" />
-      <File FileName="StampinUpService/Models/User (copy).cs" Line="23" Column="1" />
-      <File FileName="StampinUpService/Program.cs" Line="11" Column="2" />
-      <File FileName="StampinUpService/Startup.cs" Line="16" Column="25" />
-      <File FileName="StampinUpService/Models/GoRESTApiUserInfo.cs" Line="12" Column="2" />
-      <File FileName="StampinUpService/Services/EmptyInterface.cs" Line="4" Column="32" />
-      <File FileName="StampinUpService/Services/GoRESTAPIService.cs" Line="1" Column="1" />
+      <File FileName="StampinUpService/Models/User.cs" Line="32" Column="9" />
+      <File FileName="StampinUpService/appsettings.Development.json" />
+      <File FileName="StampinUpService/appsettings.json" />
+      <File FileName="StampinUpService/Properties/launchSettings.json" />
+      <File FileName="StampinUpService/Program.cs" />
+      <File FileName="StampinUpService/Startup.cs" />
+      <File FileName="StampinUpService/Models/GoRESTApiUserInfo.cs" />
+      <File FileName="StampinUpService/Services/GoRESTAPIService.cs" />
+      <File FileName="StampinUpService/Controllers/UsersController.cs" Line="80" Column="43" />
+      <File FileName="StampinUpService/Models/UserPlatform.cs" Line="20" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="StampinUp.Service" expanded="True">
             <Node name="StampinUp.Service" expanded="True">
-              <Node name="Services" expanded="True">
-                <Node name="GoRESTAPIService.cs" selected="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="UserPlatform.cs" selected="True" />
               </Node>
+              <Node name="Services" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -30,7 +31,9 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/nolan/Documents/GitHub/CSharpExercises/StampinUpService/StampinUpService/Controllers/UsersController.cs" relfile="StampinUpService/Controllers/UsersController.cs" line="146" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.StampinUp.Service PreferredExecutionTarget="/Applications/Safari.app" />
   <MultiItemStartupConfigurations />
