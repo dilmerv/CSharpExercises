@@ -1,5 +1,4 @@
-﻿using System;
-namespace StampinUp.Service.Models
+﻿namespace StampinUp.Service.Models
 {
     public class GoRESTApiUserInfo
     {
