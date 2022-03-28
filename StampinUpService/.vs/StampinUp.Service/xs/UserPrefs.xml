@@ -1,0 +1,50 @@
+﻿<Properties StartupConfiguration="{5335B765-A4B8-417E-87BF-9353724E09B8}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Tests/UsersServiceFake.cs">
+    <Files>
+      <File FileName="StampinUpService/Models/User.cs" Line="29" Column="2" />
+      <File FileName="StampinUpService/appsettings.Development.json" />
+      <File FileName="StampinUpService/appsettings.json" />
+      <File FileName="StampinUpService/Properties/launchSettings.json" />
+      <File FileName="StampinUpService/Program.cs" />
+      <File FileName="StampinUpService/Startup.cs" />
+      <File FileName="StampinUpService/Models/GoRESTApiUserInfo.cs" />
+      <File FileName="StampinUpService/Services/GoRESTAPIService.cs" />
+      <File FileName="StampinUpService/Controllers/UsersController.cs" Line="9" Column="20" />
+      <File FileName="StampinUpService/Models/UserPlatform.cs" />
+      <File FileName="StampinUpService/Services/IGoRESTAPIService.cs" />
+      <File FileName="StampinUpService/Services/UsersService.cs" Line="17" Column="1" />
+      <File FileName="Tests/UsersServiceFake.cs" Line="57" Column="32" />
+      <File FileName="Tests/UsersControllerTest.cs" Line="21" Column="16" />
+      <File FileName="StampinUpService/Services/IUsersService.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="StampinUp.Service" expanded="True">
+            <Node name="StampinUp.Service" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Services" expanded="True" />
+            </Node>
+            <Node name="Tests" expanded="True">
+              <Node name="UsersServiceFake.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="StampinUp.Service" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.StampinUp.Service PreferredExecutionTarget="/Applications/Safari.app" />
+  <MultiItemStartupConfigurations />
+</Properties>
