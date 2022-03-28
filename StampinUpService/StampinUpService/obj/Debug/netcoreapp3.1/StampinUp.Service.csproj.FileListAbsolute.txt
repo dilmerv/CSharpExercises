@@ -1,9 +1,3 @@
-/Users/nolan/Documents/GitHub/CSharpExercises/StampinUpService/StampinUpService/obj/Debug/netcoreapp3.1/StampinUp.Service.csproj.AssemblyReference.cache
-/Users/nolan/Documents/GitHub/CSharpExercises/StampinUpService/StampinUpService/obj/Debug/netcoreapp3.1/StampinUp.Service.GeneratedMSBuildEditorConfig.editorconfig
-/Users/nolan/Documents/GitHub/CSharpExercises/StampinUpService/StampinUpService/obj/Debug/netcoreapp3.1/StampinUp.Service.AssemblyInfoInputs.cache
-/Users/nolan/Documents/GitHub/CSharpExercises/StampinUpService/StampinUpService/obj/Debug/netcoreapp3.1/StampinUp.Service.AssemblyInfo.cs
-/Users/nolan/Documents/GitHub/CSharpExercises/StampinUpService/StampinUpService/obj/Debug/netcoreapp3.1/StampinUp.Service.csproj.CoreCompileInputs.cache
-/Users/nolan/Documents/GitHub/CSharpExercises/StampinUpService/StampinUpService/obj/Debug/netcoreapp3.1/StampinUp.Service.MvcApplicationPartsAssemblyInfo.cache
 /Users/nolan/Documents/GitHub/CSharpExercises/StampinUpService/StampinUpService/bin/Debug/netcoreapp3.1/appsettings.Development.json
 /Users/nolan/Documents/GitHub/CSharpExercises/StampinUpService/StampinUpService/bin/Debug/netcoreapp3.1/appsettings.json
 /Users/nolan/Documents/GitHub/CSharpExercises/StampinUpService/StampinUpService/bin/Debug/netcoreapp3.1/StampinUp.Service.deps.json
@@ -11,8 +5,14 @@
 /Users/nolan/Documents/GitHub/CSharpExercises/StampinUpService/StampinUpService/bin/Debug/netcoreapp3.1/StampinUp.Service.runtimeconfig.dev.json
 /Users/nolan/Documents/GitHub/CSharpExercises/StampinUpService/StampinUpService/bin/Debug/netcoreapp3.1/StampinUp.Service.dll
 /Users/nolan/Documents/GitHub/CSharpExercises/StampinUpService/StampinUpService/bin/Debug/netcoreapp3.1/StampinUp.Service.pdb
+/Users/nolan/Documents/GitHub/CSharpExercises/StampinUpService/StampinUpService/obj/Debug/netcoreapp3.1/StampinUp.Service.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nolan/Documents/GitHub/CSharpExercises/StampinUpService/StampinUpService/obj/Debug/netcoreapp3.1/StampinUp.Service.AssemblyInfoInputs.cache
+/Users/nolan/Documents/GitHub/CSharpExercises/StampinUpService/StampinUpService/obj/Debug/netcoreapp3.1/StampinUp.Service.AssemblyInfo.cs
+/Users/nolan/Documents/GitHub/CSharpExercises/StampinUpService/StampinUpService/obj/Debug/netcoreapp3.1/StampinUp.Service.csproj.CoreCompileInputs.cache
+/Users/nolan/Documents/GitHub/CSharpExercises/StampinUpService/StampinUpService/obj/Debug/netcoreapp3.1/StampinUp.Service.MvcApplicationPartsAssemblyInfo.cache
 /Users/nolan/Documents/GitHub/CSharpExercises/StampinUpService/StampinUpService/obj/Debug/netcoreapp3.1/staticwebassets/StampinUp.Service.StaticWebAssets.Manifest.cache
 /Users/nolan/Documents/GitHub/CSharpExercises/StampinUpService/StampinUpService/obj/Debug/netcoreapp3.1/StampinUp.Service.RazorTargetAssemblyInfo.cache
 /Users/nolan/Documents/GitHub/CSharpExercises/StampinUpService/StampinUpService/obj/Debug/netcoreapp3.1/StampinUp.Service.dll
 /Users/nolan/Documents/GitHub/CSharpExercises/StampinUpService/StampinUpService/obj/Debug/netcoreapp3.1/StampinUp.Service.pdb
 /Users/nolan/Documents/GitHub/CSharpExercises/StampinUpService/StampinUpService/obj/Debug/netcoreapp3.1/StampinUp.Service.genruntimeconfig.cache
+/Users/nolan/Documents/GitHub/CSharpExercises/StampinUpService/StampinUpService/obj/Debug/netcoreapp3.1/StampinUp.Service.csproj.AssemblyReference.cache

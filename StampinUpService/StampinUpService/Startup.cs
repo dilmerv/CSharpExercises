@@ -21,6 +21,7 @@ namespace StampinUp.Service
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddSingleton<IUsersService, UsersService>();
             services.AddSingleton<IGoRESTApiService, GoRESTApiService>();
             services.AddHttpClient("GoRESTApi", c => c.BaseAddress = new Uri("https://gorest.co.in/"));
         }
